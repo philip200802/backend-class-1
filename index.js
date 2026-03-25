@@ -35,6 +35,12 @@ app.get('/', (req, res) => {
 app.get('/seen', ((req, res) => {
     res.render('index', { name: Name })
 }))
+app.get('/signin', (req, res) => {
+    res.render('signin')
+})
+app.get('/signup', (req,res) => {
+    res.render('signup')
+})
 app.listen(port, () => {
     console.log(`Your app is working on port ${port}`);
 
